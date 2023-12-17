@@ -1,0 +1,87 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #aee1e1; /* Soothing background color */
+}
+
+#calculator {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    text-align: center;
+}
+
+.calculator-heading {
+    margin-bottom: 20px;
+    color: #6a5acd; /* Gorgeous color for the heading */
+}
+
+.made-by-text {
+    color: #333;
+    font-style: italic;
+    margin-top: 10px;
+}
+
+#display {
+    width: calc(100% - 20px);
+    margin-bottom: 20px;
+    padding: 15px;
+    font-size: 20px;
+    text-align: right;
+    border: 1px solid #6a5acd; /* Adjusted color for better visibility */
+    border-radius: 5px;
+    color: #333; /* Text color for better contrast */
+    font-weight: bold; /* Increased font weight for better visibility */
+}
+
+#buttons {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 10px;
+}
+
+#number-buttons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+}
+
+#action-buttons {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+}
+
+button {
+    padding: 15px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #eee;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #ddd;
+}
+
+button.operator {
+    background-color: #ff8c00;
+    color: #fff;
+}
+
+button.equal {
+    background-color: #4caf50;
+    color: #fff;
+}
+
+#zero-button {
+    grid-column: span 2;
+}

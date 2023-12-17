@@ -1,0 +1,85 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f1f1f1;
+    text-align: center;
+}
+
+.container {
+    text-align: center;
+}
+
+.game-title {
+    color: #6a5acd; /* Soothing purple color */
+    font-family: 'Pacifico', cursive;
+    margin-bottom: 20px;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-gap: 5px;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    background-color: #d3d3d3; /* Light gray background */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.cell:hover {
+    background-color: #ccc; /* Slightly darker gray on hover */
+}
+
+.winner {
+    background-color: #90ee90; /* Light green for winning cells */
+}
+
+.game-status {
+    color: #333;
+    margin-top: 10px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.new-game-button,
+.reset-game-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    margin: 0 10px;
+    transition: background-color 0.3s;
+}
+
+.new-game-button {
+    background-color: #4caf50; /* Green color */
+    color: #fff;
+}
+
+.new-game-button:hover {
+    background-color: #45a049; /* Slightly darker green on hover */
+}
+
+.reset-game-button {
+    background-color: #ff8c00; /* Orange color */
+    color: #fff;
+}
+
+.reset-game-button:hover {
+    background-color: #e07d00; /* Slightly darker orange on hover */
+}
